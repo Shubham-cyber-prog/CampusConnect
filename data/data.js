@@ -2,15 +2,15 @@
 export const students = [
   {
     id: 1,
-    name: "Rahul Kumar",
+    name: "Subham Nayak",
     dept: "CSE",
-    email: "rahul@gmail.com",
+    email: "subham@gmail.com",
     attendance: 85,
     skills: ["HTML", "CSS", "JavaScript"]
   },
   {
     id: 2,
-    name: "Priya Sharma",
+    name: "Aadesh Jogi ",
     dept: "CSE",
     email: "priya@gmail.com",
     attendance: 90,
@@ -18,7 +18,7 @@ export const students = [
   },
   {
     id: 3,
-    name: "Amit Das",
+    name: "Suraj Kumar",
     dept: "ECE",
     email: "amit@gmail.com",
     attendance: 78,
@@ -26,7 +26,7 @@ export const students = [
   },
   {
     id: 4,
-    name: "Neha Singh",
+    name: "Prabhakar Singh",
     dept: "CSE",
     email: "neha@gmail.com",
     attendance: 92,
@@ -34,7 +34,7 @@ export const students = [
   },
   {
     id: 5,
-    name: "Rohit Kumar",
+    name: "Ayush",
     dept: "ME",
     email: "rohit@gmail.com",
     attendance: 82,
