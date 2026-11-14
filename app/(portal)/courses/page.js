@@ -1,0 +1,7 @@
+import Link from "next/link";
+import { courses } from "../../../data/data";
+import { Card, PageHeader, ProgressBar } from "../../../components/UI";
+
+export default function CoursesPage() {
+  return <><PageHeader eyebrow="Academics" title="Courses" description="Track your enrolled courses, faculty and semester progress." action={<Link href="/dashboard" className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700">Back to dashboard</Link>} /><div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">{courses.map((course) => <Link href={`/courses/${course.id}`} key={course.id}><Card className="h-full transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-md"><div className="mb-6 flex items-start justify-between"><div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-lg font-bold text-blue-700">{course.title.slice(0, 1)}</div><span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500">{course.credits} credits</span></div><h2 className="font-bold text-slate-950">{course.title}</h2><p className="mt-2 text-sm text-slate-500">Faculty: {course.faculty}</p><div className="mt-6"><div className="mb-2 flex justify-between text-xs font-semibold text-slate-500"><span>Course progress</span><span>{course.progress}%</span></div><ProgressBar value={course.progress} /></div><p className="mt-5 text-sm font-semibold text-blue-600">View course details →</p></Card></Link>)}</div></>;
+}
