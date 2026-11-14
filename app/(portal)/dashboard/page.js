@@ -1,4 +1,4 @@
-// TODO: build this page's UI yourself (route: /dashboard)
+
 import { activities, assignments, courses, deadlines, students } from "../../../data/data";
 import { Card, PageHeader, ProgressBar, StatCard, StatusBadge } from "../../../components/UI";
 
@@ -8,7 +8,7 @@ export default function DashboardPage() {
 
   return (
     <>
-      <PageHeader eyebrow="Overview" title="Good morning, Rahul" description="Here is what is happening across your academic workspace today." action={<button className="rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-700">Download report</button>} />
+      <PageHeader eyebrow="Overview" title="Good morning, Subham Nayak " description="Here is what is happening across your academic workspace today." action={<button className="rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-700">Download report</button>} />
 
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         <StatCard label="Total Students" value={students.length} detail="Across 3 departments" accent="blue" />
